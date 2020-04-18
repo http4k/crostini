@@ -1,3 +1,4 @@
+import kotlin.String
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
@@ -11,32 +12,36 @@ import org.gradle.plugin.use.PluginDependencySpec
  * YOU are responsible for updating manually the dependency version.
  */
 object Versions {
+     const val org_jetbrains_kotlin: String = "1.3.72"
 
-    const val org_http4k: String = "3.243.0"
+     const val org_junit_jupiter: String = "5.6.2"
 
-    const val org_jetbrains_kotlin: String = "1.3.72"
+     const val de_fayard_buildsrcversions_gradle_plugin: String = "0.7.0"
 
-    const val org_junit_jupiter: String = "5.6.2"
+     const val com_github_kt3k_coveralls_gradle_plugin: String = "2.9.0" // available: "2.10.1"
 
-    const val de_fayard_buildsrcversions_gradle_plugin: String = "0.7.0"
+     const val net_saliman_cobertura_gradle_plugin: String = "3.0.0"
 
-    const val com_github_kt3k_coveralls_gradle_plugin: String = "2.10.1"
+     const val nebula_provided_base_gradle_plugin: String = "3.0.3" // available: "5.0.3"
 
-    const val net_saliman_cobertura_gradle_plugin: String = "3.0.0"
+     const val com_jfrog_bintray_gradle_plugin: String = "1.8.5"
 
-    const val nebula_provided_base_gradle_plugin: String = "3.0.3" // available: "5.0.3"
+     const val coveralls_gradle_plugin: String = "2.8.3"
 
-    const val com_jfrog_bintray_gradle_plugin: String = "1.8.5"
+     const val gradle_cobertura_plugin: String = "3.0.0"
 
-    const val result4k: String = "2.0.0"
+     const val http4k_core: String = "3.243.0"
 
-    const val hamkrest: String = "1.7.0.3"
+     const val cobertura: String = "2.1.1"
 
-    const val coveralls_gradle_plugin: String = "2.8.3"
+     const val hamkrest: String = "1.7.0.3"
 
-    const val gradle_cobertura_plugin: String = "3.0.0"
-
-    const val gradleLatestVersion: String = "6.3"
+     /**
+      * Current version: "6.1.1"
+      * See issue 19: How to update Gradle itself?
+      * https://github.com/jmfayard/buildSrcVersions/issues/19
+      */
+     const val gradleLatestVersion: String = "6.3"
 }
 
 /**
@@ -44,5 +49,5 @@ object Versions {
  * https://github.com/jmfayard/buildSrcVersions/issues/47
  */
 val PluginDependenciesSpec.buildSrcVersions: PluginDependencySpec
-    inline get() =
-        id("de.fayard.buildSrcVersions").version(Versions.de_fayard_buildsrcversions_gradle_plugin)
+     inline get() =
+               id("de.fayard.buildSrcVersions").version(Versions.de_fayard_buildsrcversions_gradle_plugin)
