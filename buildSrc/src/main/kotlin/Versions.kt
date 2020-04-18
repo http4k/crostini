@@ -16,6 +16,8 @@ object Versions {
 
      const val org_junit_jupiter: String = "5.6.2"
 
+     const val org_http4k: String = "3.243.0"
+
      const val de_fayard_buildsrcversions_gradle_plugin: String = "0.7.0"
 
      const val com_github_kt3k_coveralls_gradle_plugin: String = "2.9.0" // available: "2.10.1"
@@ -29,8 +31,6 @@ object Versions {
      const val coveralls_gradle_plugin: String = "2.8.3"
 
      const val gradle_cobertura_plugin: String = "3.0.0"
-
-     const val http4k_core: String = "3.243.0"
 
      const val cobertura: String = "2.1.1"
 

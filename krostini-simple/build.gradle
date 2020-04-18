@@ -2,4 +2,5 @@ description = 'Krostini Simple'
 
 dependencies {
     compile project(path: ":krostini-core")
+    testCompile Config.TestDependencies
 }

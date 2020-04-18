@@ -38,6 +38,17 @@ object Libs {
      const val junit_jupiter_engine: String = "org.junit.jupiter:junit-jupiter-engine:" +
                Versions.org_junit_jupiter
 
+     /**
+      * https://http4k.org
+      */
+     const val http4k_core: String = "org.http4k:http4k-core:" + Versions.org_http4k
+
+     /**
+      * https://http4k.org
+      */
+     const val http4k_format_jackson: String = "org.http4k:http4k-format-jackson:" +
+               Versions.org_http4k
+
      const val de_fayard_buildsrcversions_gradle_plugin: String =
                "de.fayard.buildSrcVersions:de.fayard.buildSrcVersions.gradle.plugin:" +
                Versions.de_fayard_buildsrcversions_gradle_plugin
@@ -69,16 +80,6 @@ object Libs {
       */
      const val gradle_cobertura_plugin: String = "net.saliman:gradle-cobertura-plugin:" +
                Versions.gradle_cobertura_plugin
-
-     /**
-      * https://http4k.org
-      */
-     const val http4k_core: String = "org.http4k:http4k-core:" + Versions.http4k_core
-
-     /**
-      * https://http4k.org
-      */
-     const val http4k_format_jackson: String = "org.http4k:http4k-format-jackson:" + Versions.http4k_core
 
      /**
       * http://cobertura.sourceforge.net
