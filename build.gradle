@@ -9,15 +9,13 @@ buildscript {
         classpath Libs.gradle_cobertura_plugin
         classpath Libs.coveralls_gradle_plugin
         classpath Libs.com_jfrog_bintray_gradle_plugin
-        classpath Libs.nebula_provided_base_gradle_plugin
     }
 }
 
 plugins {
-    id 'com.github.kt3k.coveralls' version "2.9.0"
+    id 'com.github.kt3k.coveralls' version "2.10.1"
     id "com.jfrog.bintray" version "1.8.4"
     id 'de.fayard.buildSrcVersions' version "0.7.0"
-    id 'nebula.provided-base' version "3.0.3"
     id 'net.saliman.cobertura' version "3.0.0"
 }
 
@@ -31,7 +29,6 @@ allprojects {
     apply plugin: 'jacoco'
     apply plugin: 'cobertura'
     apply plugin: 'com.github.kt3k.coveralls'
-    apply plugin: 'nebula.provided-base'
 
     jacoco {
         toolVersion = '0.8.3'
@@ -95,11 +92,11 @@ task jacocoRootReport(type: org.gradle.testing.jacoco.tasks.JacocoReport) {
 }
 
 dependencies {
-    provided Libs.kotlin_stdlib_jdk8
+    compile Libs.kotlin_stdlib_jdk8
 
-    provided project(":krostini-core")
-    provided project(":krostini-openapi3")
-    provided project(":krostini-simple")
+    compile project(":krostini-core")
+    compile project(":krostini-openapi3")
+    compile project(":krostini-simple")
 
     testCompile Config.TestDependencies
 }

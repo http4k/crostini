@@ -1,4 +1,3 @@
-import kotlin.String
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
 
@@ -16,15 +15,13 @@ object Versions {
 
     const val org_junit_jupiter: String = "5.6.2"
 
-    const val org_http4k: String = "3.243.0"
+    const val org_http4k: String = "3.246.0"
 
     const val de_fayard_buildsrcversions_gradle_plugin: String = "0.7.0"
 
-    const val com_github_kt3k_coveralls_gradle_plugin: String = "2.9.0" // available: "2.10.1"
+    const val com_github_kt3k_coveralls_gradle_plugin: String = "2.10.1"
 
     const val net_saliman_cobertura_gradle_plugin: String = "3.0.0"
-
-    const val nebula_provided_base_gradle_plugin: String = "3.0.3" // available: "5.0.3"
 
     const val com_jfrog_bintray_gradle_plugin: String = "1.8.5"
 
@@ -41,7 +38,7 @@ object Versions {
      * See issue 19: How to update Gradle itself?
      * https://github.com/jmfayard/buildSrcVersions/issues/19
      */
-    const val gradleLatestVersion: String = "6.3"
+    const val gradleLatestVersion: String = "6.4"
 }
 
 /**

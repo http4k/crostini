@@ -1,7 +1,7 @@
 description = 'Krostini Core'
 
 dependencies {
-    provided Libs.kotlin_stdlib_jdk8
+    compile Libs.kotlin_stdlib_jdk8
     compile Libs.http4k_core
     compile Libs.http4k_format_jackson
     testCompile Config.TestDependencies
